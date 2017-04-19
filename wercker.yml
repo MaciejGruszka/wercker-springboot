@@ -11,6 +11,6 @@ deploy:
         opc_password: $OPC_PASSWORD
         region: em
         domain: $OPC_DOMAIN
-        application_name: werckerapp
+        application_name: werckerapp1
         file: springbootdemo-0.0.1.war
         application_type: java
