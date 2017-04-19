@@ -5,7 +5,7 @@ build:
         goals: test
 deploy:
   steps:
-    # Deploy to Oracle ACCS
+    # Deploy to Oracle ACCS 1434
     - peternagy/oracle-accs-deploy@0.0.1:
         opc_user: $OPC_USER
         opc_password: $OPC_PASSWORD
