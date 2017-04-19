@@ -6,7 +6,7 @@ build:
 deploy:
   steps:
     # Deploy to Oracle ACCS
-    - peternagy/oracle-accs-deploy:
+    - peternagy/oracle-accs-deploy@0.0.1:
         opc_user: $OPC_USER
         opc_password: $OPC_PASSWORD
         region: em
