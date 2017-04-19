@@ -7,10 +7,10 @@ deploy:
   steps:
     # Deploy to Oracle ACCS
     - wercker/oracle-accs-deploy:
-        opc_user: john.l.smith@freemail.hu
-        opc_password: StemMed@6LIOn
+        opc_user: $OPC_USER
+        opc_password: $OPC_PASSWORD
         region: em
-        domain: hujohnlsmi
+        domain: $OPC_DOMAIN
         application_name: werckerapp
         file: springbootdemo-0.0.1.war
         application_type: java
