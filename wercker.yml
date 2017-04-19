@@ -3,3 +3,14 @@ build:
   steps:
     - xenoterracide/maven:
         goals: test
+deploy:
+  steps:
+    # Deploy to Oracle ACCS
+    - wercker/oracle-accs-deploy:
+        opc_user: john.l.smith@freemail.hu
+        opc_password: StemMed@6LIOn
+        region: em
+        domain: hujohnlsmi
+        application_name: werckerapp
+        file: springbootdemo-0.0.1.war
+        application_type: java
