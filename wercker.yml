@@ -5,12 +5,12 @@ build:
         goals: install
 deploy:
   steps:
-    # Deploy to Oracle ACCS 1538
-    - peternagy/oracle-accs-deploy@0.0.3:
+    # Deploy to Oracle ACCS
+    - peternagy/oracle-accs-deploy@0.0.4:
         opc_user: $OPC_USER
         opc_password: $OPC_PASSWORD
-        region: em
+        region: $OPC_REGION
         domain: $OPC_DOMAIN
-        application_name: werckerapp1
-        file: springbootdemo-0.0.1.war
-        application_type: java
+        application_name: $APPLICATION_NAME
+        file: $APPLICATION_FILE
+        application_type: $APPLICATION_TYPE
