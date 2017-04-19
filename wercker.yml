@@ -2,7 +2,7 @@ box: maven:latest
 build:
   steps:
     - xenoterracide/maven:
-        goals: test
+        goals: install
 deploy:
   steps:
     # Deploy to Oracle ACCS 1538
