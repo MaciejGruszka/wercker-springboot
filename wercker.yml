@@ -1,4 +1,4 @@
-box: thrively/java8-oracle-maven3@1.0.3
+box: thrively/java8-oracle-maven3
 build:
   steps:
     - script:
@@ -6,15 +6,7 @@ build:
         code: mvn install
 deploy:
   steps:
-    # Deploy to Oracle ACCS
-#    - peternagy/oracle-accs-deploy@0.0.4:
-#        opc_user: $OPC_USER
-#        opc_password: $OPC_PASSWORD
-#        region: $OPC_REGION
-#        domain: $OPC_DOMAIN
-#        application_name: $APPLICATION_NAME
-#        file: $APPLICATION_FILE
-#        application_type: $APPLICATION_TYPE
+    # Push to private docker repo
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
