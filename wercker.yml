@@ -5,10 +5,10 @@ build:
         name: Maven install
         code: mvn install
     # Push to private docker repo test1
-    - internal/docker-push:
+    - internal/docker-scratch-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         tag: springboot-app
         cmd: java -Dserver.port=$PORT -jar springbootdemo-0.0.1.war
-        repository: peternagy2/poc
+        repository: peternagy/poc
         registry: https://registry.hub.docker.com
