@@ -4,7 +4,7 @@ build:
     - script:
         name: Maven install
         code: mvn install
-deploy:
+push:
   steps:
     # Push to private docker repo 1
     - internal/docker-push:
