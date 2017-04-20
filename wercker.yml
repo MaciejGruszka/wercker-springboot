@@ -10,5 +10,5 @@ build:
         password: $DOCKER_PASSWORD
         tag: springboot-app
         cmd: java -Dserver.port=$PORT -jar springbootdemo-0.0.1.war
-        repository: peternagy/poc
+        repository: peternagy/poc2
         registry: https://registry.hub.docker.com
