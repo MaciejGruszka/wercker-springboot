@@ -12,3 +12,4 @@ push:
         password: $DOCKER_PASSWORD
         tag: springbootapp
         repository: peternagy/poc3
+        registry: https://index.docker.io/v1/
