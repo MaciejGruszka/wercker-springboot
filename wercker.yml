@@ -1,11 +1,9 @@
-box: feaster83/java8-oracle
+box: maven:latest
 build:
   steps:
     - script:
         name: Maven install
         code: mvn install
-deploy:
-  steps:
     # Push to private docker repo
     - internal/docker-push:
         username: $DOCKER_USERNAME
