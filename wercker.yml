@@ -1,4 +1,4 @@
-box: thrively/java8-oracle-maven3
+box: feaster83/java8-oracle
 build:
   steps:
     - script:
