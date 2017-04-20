@@ -4,7 +4,7 @@ build:
     - script:
         name: Maven install
         code: mvn install
-    # Push to private docker repo
+    # Push to private docker repo test1
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
