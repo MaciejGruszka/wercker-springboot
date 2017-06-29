@@ -10,6 +10,6 @@ push:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        tag: springbootapp
-        repository: peternagy/poc4
+        tag: latest
+        repository: $DOCKER_REPOSITORY
         registry: https://index.docker.io/v1/
