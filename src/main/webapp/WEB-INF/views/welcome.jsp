@@ -56,7 +56,7 @@
   <div class="container serviceContainer" style="margin-top: 150px;">
     <div class="overviewLayout">
       <div>
-              <br>SpringBoot application demo. Modified. Current server time: <%= new java.util.Date() %> <br>
+              <br>SpringBoot application demo. Modified locally. Current server time: <%= new java.util.Date() %> <br>
               <h3>
                 <span style="color: #333; text-decoration: none">About
                   Oracle Application Container Cloud</span>
